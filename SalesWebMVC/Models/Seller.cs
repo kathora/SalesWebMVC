@@ -16,7 +16,7 @@ namespace SalesWebMVC.Models
         public double BaseSalary { get; set; }
         public Department Department { get; set; } //associação com um departamento
         public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>(); // associação com varias sales
-   
+        public int DepartmentId { get; set; }
         public Seller()
         {
         }
